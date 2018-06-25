@@ -55,7 +55,7 @@ RUN apt-get update \
 # Add composer and to the image
 RUN curl -s http://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer \
-    && wget -O phpunit https://phar.phpunit.de/phpunit-7.phar \
+    && wget -O phpunit https://phar.phpunit.de/phpunit-6.phar \
     && mv phpunit /usr/local/bin/phpunit \
     && chmod +x /usr/local/bin/phpunit
 
